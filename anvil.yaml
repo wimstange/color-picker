@@ -1,0 +1,14 @@
+correct_dependency_ids: {}
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Form1}
+package_name: Color_Picker
+allow_embedding: false
+name: Clone of Color Picker with change event
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+metadata: {}
+db_schema: {}
+renamed: true

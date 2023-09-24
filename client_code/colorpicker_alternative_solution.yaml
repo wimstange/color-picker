@@ -1,0 +1,15 @@
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
+    role: null, html: "\n<input type = 'color' id = \"choosecolor\" onchange=\"color_changed_event()\"\
+      >\n\n<script>\nfunction setcolor(col) {\n   document.getElementById(\"choosecolor\"\
+      ).value = col\n}\n\nfunction getcolor() {\n   var x = document.getElementById(\"\
+      choosecolor\").value;\n   return x\n}\n    \nfunction color_changed_event()\
+      \ {\n  var x = document.getElementById(\"choosecolor\");\n  anvil.call(x,\"\
+      my_change_func\", \"color changed\")\n}\n</script>"}
+components: []
+custom_component: true
+properties:
+- {name: align, type: 'text[]', default_value: null, default_binding_prop: true}
+events:
+- {name: event, description: '', default_event: true}
